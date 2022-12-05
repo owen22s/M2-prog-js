@@ -11,7 +11,7 @@ class App
 
         //dak
         g.beginPath()
-        g.fillStyle = "purple"
+        g.fillStyle = "blue"
         g.moveTo(150,50);
         g.lineTo(100,150);
         g.lineTo(300,200);
@@ -34,6 +34,21 @@ class App
         g.closePath();
         g.stroke();
         g.fill();
+
+        //deur
+        g.beginPath()
+        g.moveTo(300, 200)
+        g.lineTo(300,300);
+        g.moveTo(300,300)
+        g.lineTo(325,287)
+        g.moveTo(325,287)
+        g.lineTo(325,230)
+        g.moveTo(325,230)
+        g.lineTo(300,240)
+        g.closePath();
+        g.stroke();
+        g.fill();
+
 
         g.beginPath()
         if (randomgetal >= 0.5){
