@@ -16,12 +16,12 @@ function randomvierkant(){
    console.log(randomPlek) 
    randomPlek.classList.add('mol')
 
-   hitPosition = randomPlek.id
+   hitPosition = randomvierkant.id
 
 }
  
-vierkant.forEach(vierkant =>{
-    vierkant.addEventListener('movedown', () => {
+vierkant.forEach(vierkant => {
+    vierkant.addEventListener('mousedown', () => {
 if (vierkant.id == hitPosition ) {
    result++ 
    score.textContent = result
@@ -31,7 +31,7 @@ if (vierkant.id == hitPosition ) {
 } )
 function beweegmol(){
     let timerid = null
-  timerid = setInterval(randomvierkant, 300)
+  timerid = setInterval(randomvierkant, 1000)
 
 }
 
@@ -40,9 +40,9 @@ randomPlek()
 function aftellen(){
 hudigetijd--
 tijd.textContent = hudigetijd
-if (hudigetijd = 0)
+if (hudigetijd == 0){
 clearInterval(aftellenId)
 alert('gamer over je score is' + result)
 }
 
-let aftellenId = setInterval(aftellen, 900)
+let aftellenId = setInterval(aftellen, 900)}
