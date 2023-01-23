@@ -27,7 +27,24 @@ class App
         g.fillRect(545,725,10,60)
         g.fillStyle = "#964B00"
         g.fillRect(450,300,30,60)
+        g.beginPath();
+        g.fillStyle = "lightgreen";
+        g.moveTo(430, 320);
+        g.lineTo(500, 320);
+        g.lineTo(450,250);
+        g.fill();
+        g.closePath();
     }
+    boom(g,x,y){
+      g.beginPath();
+      g.fillStyle = "#FBBF50";
+      g.moveTo(200, 200);
+      g.lineTo(800, 800);
+      g.lineTo(-400, 800);
+      g.fill();
+      g.closePath();
+
+      }
     tekenHuis(g, x, y){
       let randomgetal = Math.random();
       g.beginPath()
