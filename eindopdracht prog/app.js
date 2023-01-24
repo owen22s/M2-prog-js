@@ -1,3 +1,6 @@
+setTimeout(() => {
+  document.location.reload();
+}, 1000);
 class App
 {
     runApplication()
@@ -40,14 +43,16 @@ class App
         g.lineTo(450,250);
         g.fill();
         g.closePath();
-        g.fillStyle = "yellow"
+        g.fillStyle = "#b826ed"
       g.font = "30px cursive";
       g.fillText("Vrolijk kerstfeest", 500, 300);
+      g.fillStyle = "yellow"
       g.fillRect(445,250,10,10)
       g.fillRect(445,280,10,10)
       g.fillRect(460,300,10,10)
       g.fillRect(430,320,10,10)
       g.fillRect(450,320,10,10)
+      g.fillRect(440,300,10,10)
       g.fillStyle = "red"
       g.fillRect(470,320,10,10)
       g.fillRect(490,320,10,10)
