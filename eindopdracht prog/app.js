@@ -7,7 +7,13 @@ class App
         let canvas = document.getElementById("canvasId")
         console.log(canvas)
         let g = canvas.getContext("2d");
+    
+        var ctx = canvas.getContext("2d");
+        g.fillStyle = "#4b52d1" 
+        g.fillRect(0,0,1200,1200)
 
+        g.font = "30px Arial";
+        g.fillText("vrolijk kerst feest", 40, 50);
         this.tekenHuis(g, 600, 10);
         this.tekenHuis(g,0,400 )
         this.tekenHuis(g, 0,0)
@@ -34,15 +40,35 @@ class App
         g.lineTo(450,250);
         g.fill();
         g.closePath();
+        g.fillStyle = "yellow"
+      g.font = "30px cursive";
+      g.fillText("Vrolijk kerstfeest", 500, 300);
+      g.fillRect(445,250,10,10)
+      g.fillRect(445,280,10,10)
+      g.fillRect(460,300,10,10)
+      g.fillRect(430,320,10,10)
+      g.fillRect(450,320,10,10)
+      g.fillStyle = "red"
+      g.fillRect(470,320,10,10)
+      g.fillRect(490,320,10,10)
+      g.fillRect(480,300,10,10)
+      g.fillRect(460,280,10,10)
+
+       
     }
     boom(g,x,y){
-      g.beginPath();
-      g.fillStyle = "#FBBF50";
-      g.moveTo(200, 200);
-      g.lineTo(800, 800);
-      g.lineTo(-400, 800);
-      g.fill();
-      g.closePath();
+
+        g.fillStyle = "green";
+    
+        g.beginPath();
+    
+        g.moveTo(30 + x, 120 + y);
+    
+        g.lineTo(130 + x, 20 + y);
+    
+        g.lineTo(230 + x, 120 + y);
+    
+        g.fill();
 
       }
     tekenHuis(g, x, y){
