@@ -43,7 +43,7 @@ class App
         g.lineTo(450,250);
         g.fill();
         g.closePath();
-        g.fillStyle = "#fa6988"
+        g.fillStyle = "#b826ed"
       g.font = "30px cursive";
       g.fillText("Vrolijk kerstfeest", 500, 300);
       g.fillStyle = "yellow"
